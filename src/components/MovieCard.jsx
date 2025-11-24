@@ -1,7 +1,7 @@
 function Card({movie}) {
     return (
         <div className='rounded-lg shadow-lg hover:scale-[1.05] overflow-hidden w-[240px] transition-all'>
-            <img className='poster poster_path' src={movie.poster_path}></img>
+            <img className='poster poster_path' src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}></img>
             <h3 className='title'>{movie.title}</h3>
             <h2 className='year'>{movie.release_date}</h2>
         </div>  
